@@ -1,0 +1,32 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0a0e12;
+  --surface:   #111820;
+  --surface2:  #182030;
+  --border:    #1e3048;
+  --accent:    #1B9ED4;
+  --accent2:   #1588b8;
+  --danger:    #e05252;
+  --success:   #4caf7d;
+  --text:      #e8ecf2;
+  --muted:     #6a8099;
+  --font-head: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; border: none; outline: none; font-family: var(--font-body); }
+input, textarea, select { outline: none; font-family: var(--font-body); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
